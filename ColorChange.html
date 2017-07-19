@@ -1,11 +1,18 @@
 <!DOCTYPE HTML>
 <html>
-<title>Color Change</title>
+<title>JavaScript Fun</title>
 <body style=background-color:black;>
   <h1 style=color:red;>Google Colors</h1>
   <br>
-  <button onclick="document.getELementbyID("MyImage").src="recolored.jpg"">Recolor!</button>
+  <button onclick="document.getELementById("MyImage").src="recolored.jpg"">Recolor!</button>
   <img id="MyImage" src="ColorExplosion.jpeg" width="400" height="400">
-  <button onclick="document.getELementbyID("MyImage").src="ColorExplosion.jpeg"">Back to Normal!</button>
+  <button onclick="document.getELementById("MyImage").src="ColorExplosion.jpeg"">Back to Normal!</button>
+  <br><br>
+  <h1 style=color:green;>Random Number Generator</h1>
+  <br>
+  <p id="demo"></p>
+  <script>
+    document.getElementById("demo").innerHTML = Math.random();
+  </script>
 </body>
 </html>
